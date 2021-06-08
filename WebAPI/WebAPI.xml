@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:WebAPI.Controllers.AdresController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.#ctor(Business.Abstract.IIlService,Business.Abstract.IIlceService,Business.Abstract.IMahalleService,Business.Abstract.ICsbmService,Business.Abstract.INetGsmSistemOnayKodService,Business.Abstract.IMapKeyService)">
+            <summary>
+            
+            </summary>
+            <param name="illerService"></param>
+            <param name="ilcelerService"></param>
+            <param name="mahallelerService"></param>
+            <param name="csbmService"></param>
+            <param name="netGsmSistemOnayKodService"></param>
+            <param name="mapKeyService"></param>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.illeriGetir">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.ilceleriGetir(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ilKodu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.mahalleleriGetir(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ilceKodu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.csbmleriGetir(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="mahalleKodu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.AdresController.konumdanAdresGetir(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="lat"></param>
+            <param name="lng"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPI.Controllers.AuthController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.AuthController.#ctor(Business.Abstract.IAuthService)">
+            <summary>
+            
+            </summary>
+            <param name="authService"></param>
+        </member>
+        <member name="M:WebAPI.Controllers.AuthController.Login(Entities.DTOs.UserForLoginDto)">
+            <summary>
+            
+            </summary>
+            <param name="userForLoginDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.AuthController.Register(Entities.DTOs.UserForRegisterDto)">
+            <summary>
+            
+            </summary>
+            <param name="userForRegisterDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPI.Controllers.BaseApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Success``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Success``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Created``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Created``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.NoContent``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.NoContent``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.BadRequest``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.BadRequest``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Unauthorized``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Unauthorized``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Forbidden``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Forbidden``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.NotFound``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.NotFound``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Error``1(System.String,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <param name="internalMessage"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI.Controllers.BaseApiController.Error``1(Core.Utilities.Results.Concrete.ApiResult{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPI.Helpers.BasicAuthenticationHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAPI.Helpers.BasicAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock,Business.Abstract.IUserService)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+            <param name="logger"></param>
+            <param name="encoder"></param>
+            <param name="clock"></param>
+            <param name="userService"></param>
+        </member>
+        <member name="M:WebAPI.Helpers.BasicAuthenticationHandler.HandleAuthenticateAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPI.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+            <param name="hostEnvironment"></param>
+        </member>
+        <member name="M:WebAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container. 
+            </summary>
+            <remarks>
+            It is common to all configurations and must be called. Aspnet core does not call this method because there are other methods.
+            </remarks>
+            <param name="services"></param>.
+        </member>
+        <member name="M:WebAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>.
+        </member>
+    </members>
+</doc>
